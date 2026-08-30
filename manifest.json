@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "API Mock Master",
+  "version": "1.0.0",
+  "description": "Intercept and mock API response for development and testing",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
