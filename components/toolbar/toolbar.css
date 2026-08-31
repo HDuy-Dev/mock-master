@@ -1,0 +1,68 @@
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px;
+  height: 46px;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-toolbar);
+  flex-shrink: 0;
+}
+
+.toolbar-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.logo-icon {
+  width: 18px;
+  height: 18px;
+  color: var(--accent);
+}
+.app-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+  letter-spacing: 0.3px;
+}
+.toolbar-right {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 30px;
+  height: 30px;
+
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--text-dim);
+  cursor: pointer;
+  transition:
+    background 0.15s,
+    color 0.15s;
+}
+.icon-btn svg {
+  width: 15px;
+  height: 15px;
+}
+.icon-btn:hover {
+  background: var(--border-soft);
+  color: var(--text);
+}
+.icon-btn.btn-close-window {
+  margin-left: 2px;
+  border-left: 1px solid var(--border);
+  border-radius: 0 6px 6px 0;
+  width: 32px;
+}
+.icon-btn.btn-close-window:hover {
+  color: var(--red);
+  background: rgba(239, 68, 68, 0.1);
+}

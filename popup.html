@@ -1,17 +1,52 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <style>
-      body {
-        width: 200px;
-        padding: 10px;
-        font-family: sans-serif;
-      }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API Mock Master</title>
+    <link rel="stylesheet" href="popup.css" />
+    <link rel="stylesheet" href="components/toolbar/toolbar.css" />
   </head>
 
   <body>
-    <h3>API Mock Master</h3>
+    <div id="app">
+      <!-------------Toolbar------------->
+      <header class="toolbar">
+        <div class="toolbar-left">
+          <svg
+            class="logo-icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              d="M8 9l3 3-3 3M13 15h3M3 5a2 2 0 012-2h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5z"
+            />
+          </svg>
+          <span class="app-title">API Mock Master</span>
+        </div>
+
+        <div class="toolbar-right">
+          <button
+            class="icon-btn btn-close-window"
+            id="btn-close"
+            title="Close"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+            >
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+          </button>
+        </div>
+      </header>
+    </div>
+
+    <script type="module" src="main.js"></script>
   </body>
 </html>

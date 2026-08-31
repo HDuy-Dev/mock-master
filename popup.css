@@ -1,0 +1,37 @@
+/* ---Reset---- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---Base---- */
+:root {
+  --bg: #252840;
+  --border: #2e3350;
+  --border-soft: #252840;
+  --text: #e2e4f0;
+  --text-dim: #8a8fb0;
+  --accent: #f59e0b;
+  --red: #ef4444;
+  --bg-toolbar: #1a1d27;
+}
+
+html,
+body {
+  width: 800px;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sens-serif;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 450px;
+  max-height: 600px;
+}
