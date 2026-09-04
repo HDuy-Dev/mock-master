@@ -3,6 +3,7 @@
   "name": "API Mock Master",
   "version": "1.0.0",
   "description": "Intercept and mock API response for development and testing",
+  "permissions": ["storage", "tabs"],
   "action": {
     "default_popup": "popup.html"
   },
